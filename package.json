@@ -1,0 +1,23 @@
+{
+  "name": "play-music-app",
+  "version": "1.0.0",
+  "description": "playmusic-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardoalexandrepereira/Play-music-app.git"
+  },
+  "author": "ricardo pereira",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
