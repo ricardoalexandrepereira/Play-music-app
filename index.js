@@ -5,7 +5,7 @@ const path = require("path");
 const Music = require("./model/Music");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 let music = null;
 
 app.set("view engine", "ejs");
