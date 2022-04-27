@@ -52,10 +52,7 @@ section#player div{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
-    height: 70%;
-    
-    
+    height: 70%;  
 }
 
 section#player div img#currentImg{
@@ -161,4 +158,48 @@ td#actions a{
 #delete:hover{
     background-color: pink;
     color: #121214;
+}
+section#modal{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section#modal div#card{
+    position: relative;
+    width: 50%;
+    background-color: #121214;
+    border-radius: 2%;
+    
+}
+section#modal div#card h2{
+    padding: 2rem;
+    margin:0;
+    color:#ddd;
+}
+
+section#modal div#card a#close-modal{
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    
+    
+}
+
+section#modal div#card hr{
+    width:90%;
+    margin:0 auto;
+}
+form#form-modal{
+    width: 100%;
+    padding: 2rem 0 ;
 }
