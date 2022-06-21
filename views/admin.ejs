@@ -72,8 +72,8 @@
                                 <%= music.author %>
                             </td>
                             <td id="actions">
-                                <a id="edit" href="/by/<%= music._id %>">Editar</a>
-                                <a id="delete" href="">Apagar</a>
+                                <a id="edit" href="/by/<%= music._id %>/edit">Editar</a>
+                                <a id="delete" href="/by/<%= music._id %>/delete">Apagar</a>
                             </td>
                         </tr>
                     <% }) %>
@@ -112,6 +112,23 @@
 
     </section>
     <% } %>
+
+    <% if (musicDel != null) { %>
+        <section id="modal">
+            <div id="card">
+                <a id="close-modal" href="/admin"><i class="bi bi-x-lg"></i></a>
+                <h2>Confirmação</h2>
+                <hr>
+                <p>Deseja apagar <%= musicDel.name %> ?</p>
+                <div id="btn-confirm">
+                    <a id="no" href="/admin">não</a>
+                    <a id="yes" href="/delete/<%= musicDel._id %>">sim</a>
+                </div>
+    
+            </div>
+    
+        </section>
+        <% } %>
     
 </body>
 </html>

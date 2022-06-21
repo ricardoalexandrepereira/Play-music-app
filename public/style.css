@@ -203,3 +203,34 @@ form#form-modal{
     width: 100%;
     padding: 2rem 0 ;
 }
+
+section#modal div#card p{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+}
+section#modal div#card div#btn-confirm{
+display: flex;
+justify-content: space-around;
+padding: 1rem 0;
+
+}
+section#modal div#card div#btn-confirm a{
+    text-decoration: none;
+    color:#fff;
+    border: solid 1px #fff;
+    padding: .5rem;
+    border-radius: .3rem;
+    transition: all .3s ease-in-out;
+    width:30%;
+    text-align: center;
+
+}
+#yes:hover{
+    background-color: rgb(18, 163, 13);
+    color: #121214;
+}
+#no:hover{
+    background-color: rgb(250, 4, 45);
+    color: #121214;
+}
