@@ -56,8 +56,8 @@ section#player div{
 }
 
 section#player div img#currentImg{
-width: 20rem;
-height: 20rem;
+width: 15rem;
+height: 15rem;
 }
 section#player div h2#currentName{
     width: 100%;
@@ -132,7 +132,7 @@ form button:hover{
     color:rgb(0, 0, 0);
 }
 section#player h2{
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100%;
     padding: 0 0 5rem 0;
     font-size: 3rem;
@@ -233,4 +233,41 @@ section#modal div#card div#btn-confirm a{
 #no:hover{
     background-color: rgb(250, 4, 45);
     color: #121214;
+}
+
+section#controls{
+    background-color: #232327;
+    padding: .5rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#controls i{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
+section#controls input#progressbar{
+    width: 60%;
+}
+section#controls i:hover{
+    background-color: #ffffff10;
+    border-radius: 3rem;
+}
+
+section#controls i#vol-icon{
+    font-size: 1rem;
+    padding: .4rem;
+}
+section#controls input#volume{
+    width: 10%;
+}
+section#controls span{
+    padding: 1.3rem;
+    background-color: transparent;
 }
